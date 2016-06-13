@@ -1297,7 +1297,7 @@ static inline uintptr_t GetFunctionAddress (void* (*func)(uintptr_t*))
 }
 #endif
 
-// to trick complier into preventing inlining
+// to trick compiler into preventing inlining
 static void* (*mmapper_addr)(uintptr_t* addr) = &Mmapper;
 
 // TODO(maxim): copy/move this to memory_region_map_unittest
@@ -1338,7 +1338,7 @@ static void* Mallocer(uintptr_t* addr_after_malloc_call) {
   return r;
 }
 
-// to trick complier into preventing inlining
+// to trick compiler into preventing inlining
 static void* (*mallocer_addr)(uintptr_t* addr) = &Mallocer;
 
 // non-static for friendship with HeapProfiler

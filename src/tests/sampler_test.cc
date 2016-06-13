@@ -304,7 +304,7 @@ TEST(Sampler, TestPickNextSample_MultipleValues) {
 }
 
 
-// This is superceeded by the Anderson-Darling Test
+// This is superseded by the Anderson-Darling Test
 // and it not run now.
 // Tests how fast nearby values are spread out with  LRand64
 // The purpose of this code is to determine how many

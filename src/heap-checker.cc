@@ -1451,7 +1451,7 @@ static SpinLock alignment_checker_lock(SpinLock::LINKER_INITIALIZED);
       // Do fast check before the more expensive HaveOnHeapLocked lookup:
       // this code runs for all memory words that are potentially pointers:
       const bool can_be_on_heap =
-        // Order tests by the likelyhood of the test failing in 64/32 bit modes.
+        // Order tests by the likelihood of the test failing in 64/32 bit modes.
         // Yes, this matters: we either lose 5..6% speed in 32 bit mode
         // (which is already slower) or by a factor of 1.5..1.91 in 64 bit mode.
         // After the alignment test got dropped the above performance figures

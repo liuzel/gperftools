@@ -209,7 +209,7 @@ class ProfileHandler {
   void StartTimer() EXCLUSIVE_LOCKS_REQUIRED(control_lock_);
 
   // Stops the interval timer. If the thread library shares timers between
-  // threads, this fucntion stops the shared timer. Otherwise, this will stop
+  // threads, this function stops the shared timer. Otherwise, this will stop
   // the timer in the current thread.
   void StopTimer() EXCLUSIVE_LOCKS_REQUIRED(control_lock_);
 

@@ -178,7 +178,7 @@ class PERFTOOLS_DLL_DECL MallocExtension {
   //      This property is not writable.
   //
   // "tcmalloc.transfer_cache_free_bytes"
-  //      Number of free bytes that are waiting to be transfered between
+  //      Number of free bytes that are waiting to be transferred between
   //      the central cache and a thread cache. They always count
   //      towards virtual memory usage, and unless the underlying memory
   //      is swapped out by the OS, they also count towards physical

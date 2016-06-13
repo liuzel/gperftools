@@ -378,7 +378,7 @@ static void InitializeSystemInfo() {
       }
 #else
     // When parsing the "cpu MHz" and "bogomips" (fallback) entries, we only
-    // accept postive values. Some environments (virtual machines) report zero,
+    // accept positive values. Some environments (virtual machines) report zero,
     // which would cause infinite looping in WallTime_Init.
     if (!saw_mhz && strncasecmp(line, "cpu MHz", sizeof("cpu MHz")-1) == 0) {
       const char* freqstr = strchr(line, ':');
