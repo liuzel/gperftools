@@ -35,7 +35,7 @@
  * easier to compile this code under VC++.
  *
  * Several of these are taken from glib:
- *    http://developer.gnome.org/doc/API/glib/glib-windows-compatability-functions.html
+ *    http://developer.gnome.org/doc/API/glib/glib-windows-compatibility-functions.html
  */
 
 #ifndef GOOGLE_BASE_WINDOWS_H_

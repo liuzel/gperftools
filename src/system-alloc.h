@@ -76,7 +76,7 @@ void* TCMalloc_SystemAlloc(size_t bytes, size_t *actual_bytes,
 extern PERFTOOLS_DLL_DECL
 bool TCMalloc_SystemRelease(void* start, size_t length);
 
-// Called to ressurect memory which has been previously released
+// Called to resurrect memory which has been previously released
 // to the system via TCMalloc_SystemRelease.  An attempt to
 // commit a page that is already committed does not cause this
 // function to fail.
